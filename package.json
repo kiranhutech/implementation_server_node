@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/kiranhutech/implementation_server_node/issues"
   },
-  "homepage": "https://github.com/kiranhutech/implementation_server_node#readme"
+  "homepage": "https://github.com/kiranhutech/implementation_server_node#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "socket.io": "^4.5.1"
+  }
 }
