@@ -4,10 +4,11 @@ const http = require("http");
 const { Server } = require("socket.io");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const expense = require("./routes/expense");
 
 app.use(cors());
 app.use(bodyParser.json());
-
+app.use("/api/expense", expense);
 app.get("/", (req, res) => {
   res.send("Welcome to mock server");
 });
