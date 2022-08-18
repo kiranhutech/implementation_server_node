@@ -42,4 +42,14 @@ router.get("/get-expense", (req, res) => {
   res.status(200).json({ success: true, statusCode: 200, data: data });
 });
 
+router.post("/add-expense", (req, res) => {
+  res
+    .status(200)
+    .json({
+      success: true,
+      statusCode: 200,
+      message: "expense added successfully",
+    });
+});
+
 module.exports = router;
